@@ -61,3 +61,4 @@ print("离散数据点x插值的误差：\n", fh(x0) - y0)
 plt.subplot(122)
 hermite.plt_interpolation(fh=fh, x0=x0, y0=y0, is_show=False)  # 埃尔米特插值可视化
 plt.show()
+plt.savefig("output.png", dpi=300, bbox_inches='tight', transparent=True)

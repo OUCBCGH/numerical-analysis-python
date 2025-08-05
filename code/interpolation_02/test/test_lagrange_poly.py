@@ -9,6 +9,7 @@ sys.path.append(r'/home/ld/numerical-analysis-python/NumericalCalculationMethod'
 import numpy as np
 from interpolation_02.lagrange_interpolation import LagrangeInterpolation
 from util_font import *
+import matplotlib.pyplot as plt
 
 
 def plt_lagrange(x, y, x0, y0, lag_obj, fh, info):
@@ -63,6 +64,8 @@ lag2.fit_interp()
 y0 = lag2.predict_x0(x0)  # 预测
 plt_lagrange(x, y, x0, y0, lag2, fh2, ["g_2(x)", "f_2(x)"])
 plt.show()
+# plt.savefig("output.png", dpi=300, bbox_inches='tight', transparent=True)
+
 
 print("多项式系数：", lag2.poly_coefficient)
 print("多项式系数对应的各阶次：", lag2.coefficient_order)

@@ -8,6 +8,7 @@ sys.path.append(r'/home/ld/numerical-analysis-python/NumericalCalculationMethod'
 """
 import numpy as np  # 数值计算
 import sympy  # 符号计算
+import matplotlib as plt
 from util_font import *
 
 
