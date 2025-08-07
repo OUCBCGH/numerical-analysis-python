@@ -17,8 +17,8 @@ class OrthogonalPolynomialUtils:
     approximation_poly = None  # 逼近的多项式
     poly_coefficient = None  # 逼近多项式的系数
     polynomial_orders = None  # 逼近多项式各项阶次
-    max_abs_error = np.infty  # 10次模拟选最大的
-    mae = np.infty  # 10次模拟均值
+    max_abs_error = np.inf  # 10次模拟选最大的
+    mae = np.inf  # 10次模拟均值
 
     def __init__(self, fun, k=6, x_span=np.array([-1, 1])):
         self.a, self.b = x_span[0], x_span[1]  # 区间左右端点
