@@ -56,7 +56,7 @@ class BestUniformApproximation(BestApproximationUtils):
         self.poly_coefficient = self.solve_coefficient(x, fx)  # p(x)的初始系数
         # 3. 确定新的点集
         u = self.poly_coefficient[-1]  # 算法中的u
-        max_t, max_x, tol = 0.0, np.infty, np.infty  # 记录abs(fx - px)取最大值的x，精度初始化为正无穷
+        max_t, max_x, tol = 0.0, np.inf, np.inf # 记录abs(fx - px)取最大值的x，精度初始化为正无穷
         while tol > self.eps:
             xi = self.a  # xi初始化为区间左端点
             # 3.1 此循环找出abs(f(x)-p(x))取最大值的x
